@@ -18,6 +18,8 @@ public class CalculatorTest {
         int actual = calculator.add(val1, val2);
         //Then
         Assert.assertEquals(expected, actual);
+        System.out.println(actual);
+        System.out.println(expected);
     }
 
     @Test
@@ -26,10 +28,12 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int val1 = 7;
         int val2 = 10;
-        int expected = val2 + val1;
+        int expected = val1 - val2;
         int actual = calculator.subtract(val1, val2);
         //Then
         Assert.assertEquals(expected, actual);
+        System.out.println(actual);
+        System.out.println(expected);
 
     }
 
